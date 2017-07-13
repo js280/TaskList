@@ -1,0 +1,24 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "This project will keep track of multiple tasks, and allow the addition, deletion, and completion of tasks.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "tasks",
+    "task",
+    "manager",
+    "to-do"
+  ],
+  "author": "JStewart",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
