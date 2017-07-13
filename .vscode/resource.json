@@ -1,0 +1,8 @@
+{
+  "css": {
+    "style": [
+      "public/assets/css/bootstrapstrap.min.css",
+      "public/assets/css/custom.css"
+    ]
+  }
+}
