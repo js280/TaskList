@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var indexController = require('./controllers/indexController');
+var Controller = require('./controllers/Controllers');
 
 // Node.js server listening on port 3000 and sending console message on startup...
 app.listen(3000);
@@ -19,8 +19,9 @@ app.set('views', './views');
 
 app.use(express.static(__dirname + '/public'));
 
-// setup controllers
-indexController(app);
+// Initialize controllers
+Controller(app);
+
 
 
 

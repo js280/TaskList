@@ -1,4 +1,4 @@
-body {
+body.index {
         height: 100vh;
         width: 100vw;
         background: -webkit-radial-gradient(center, ellipse cover, rgba(248,80,50,.8) 0%, rgba(241,111,92,1) 17%, rgba(240,79,57,1) 42%, rgba(240,47,23,1) 69%, rgba(231,56,39,1) 100%);
