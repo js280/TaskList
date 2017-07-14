@@ -3,6 +3,14 @@ body.index {
         width: 100vw;
         background: -webkit-radial-gradient(center, ellipse cover, rgba(248,80,50,.8) 0%, rgba(241,111,92,1) 17%, rgba(240,79,57,1) 42%, rgba(240,47,23,1) 69%, rgba(231,56,39,1) 100%);
         background-repeat: no-repeat;
+        margin: 0px;
+}
+
+body.normal {
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(231,56,39,1);
+    margin: 0px;
 }
 
 div#centerSplash {
