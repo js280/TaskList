@@ -6,10 +6,17 @@ html
         link(rel="stylesheet", type="text/css", href="/assets/css/custom.css")
         link(href="https://fonts.googleapis.com/css?family=Dosis|Josefin+Sans|Muli|Ubuntu" rel="stylesheet")
     body.index
-        div.container
-            div#centerSplash
-                h1#centerTitle TaskList Manager v0.1b
-                a(href="/login").btn.btn-success.btn-lg &nbsp;&nbsp;&nbsp; Login &nbsp;&nbsp;&nbsp;
+        div.container-fluid
+            .row
+                .col-sm-12.nav.navbar.text-right
+                    span.login
+                        i.glyphicon.glyphicon-log-in
+                        |   Sign In
+            .row
+                .col-sm-12
+                    div#centerSplash
+                        h1#centerTitle TaskList Manager v0.1b
+                        a(href="/task-entry").btn.btn-success.btn-lg &nbsp;&nbsp;&nbsp; Login &nbsp;&nbsp;&nbsp;
 
     // Begin scripts //
     

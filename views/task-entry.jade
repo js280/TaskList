@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+    script.
+        function addItem() {
+            var myForm = document.getElementById("entryForm");
+            myForm.submit();
+            return false;
+        }
+
+        function removeItem(id) {
+            window.location.href = "add-remove-task/" + id;
+            return false;
+        }
+
+    .container-fluid
+        .row
+            div#taskEntry.col-sm-12.col-md-12.col-lg-12.text-center
+                .row
+                    .col-sm-12.col-md-12.col-lg-12
+                        form#entryForm.form-inline(action="/add-remove-task", method="POST")
+                            .form-group
+                                .input-group
+                                    input.form-control.input-sm.taskInput(type="text", name="task", placeholder="Enter task...")
+                                    .btn.btn-default.blackSubmit.input-group-addon(role="button", onClick="addItem();") Add Task
+        -tasks.forEach(function(item) {
+        .row
+            .taskList.col-sm-12.text-center
+                span.taskItem(onClick='removeItem("#{item._id}");') #{item.task}
+        -});
